@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+  </head>
+  <body>
+    <div class="sidebar">
+        <h2>Popular Movie</h2>
+      <div class="card">
+        <h3>Sort</h3>
+        <p>sort result by</p>
+        <select onchange="sortData(this.value)">
+          <option value="ASC_BY_POPULARITY">Asc by popularity</option>
+          <option value="DESC_BY_POPULARITY">Desc by popularity</option>
+        </select>
+      </div>
+    </div>
+    <div id="movie-list" class="grid-container content"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
